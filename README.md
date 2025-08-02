@@ -3,18 +3,16 @@
 This is a simple, single-page web application for planning travel. It is built with HTML, CSS, and JavaScript.
 
 ## Features
-
-* Budget Calculator
-* Currency Converter
+* Deal Updates
 * Pre-Travel Checklist
 
 ## How to Run with Docker
 
 1.  **Build the Docker image:**
-    `docker build -t wanderlust-app .`
+    `docker build -t travelbuddy-project .`
 
 2.  **Run the container:**
-    `docker run -d -p 8080:80 wanderlust-app`
+    `docker run -d -p 8080:80 travelbuddy-project`
 
     *Note: The `-p 8080:80` command maps port 8080 on your computer to port 80 inside the container. You can change the first number to any available port (e.g., `-p 3000:80`).*
 
