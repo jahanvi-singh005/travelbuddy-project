@@ -1,4 +1,4 @@
-# Wanderlust Travel Planner
+# Travel Buddy Project
 
 This is a simple, single-page web application for planning travel. It is built with HTML, CSS, and JavaScript.
 
