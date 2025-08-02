@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelbuddy - Home</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm fixed w-full z-20 top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-gray-800 flex items-center">
+                <i class="fas fa-map-signs text-teal-600 mr-3"></i>
+                Travelbuddy
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="deals.html" class="nav-link">Deals</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="register.html" class="bg-teal-600 text-white py-2 px-5 rounded-lg hover:bg-teal-700 transition-all font-medium">Register</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+             <a href="index.html" class="nav-link-mobile">Home</a>
+             <a href="destinations.html" class="nav-link-mobile">Destinations</a>
+             <a href="deals.html" class="nav-link-mobile">Deals</a>
+             <a href="about.html" class="nav-link-mobile">About</a>
+             <a href="register.html" class="block py-2 px-4 text-sm bg-teal-600 text-white text-center font-medium">Register</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Find Your Next Adventure</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8">Let's explore the world together. Unforgettable journeys await.</p>
+            <a href="destinations.html" class="bg-teal-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-teal-700 transition-all">
+                Discover More
+            </a>
+        </div>
+    </header>
+
+    <!-- Destinations Section -->
+    <main class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Featured <span class="text-teal-600">Trips</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Destination Card 1: Thailand -->
+                <div class="card">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x400/3498db/ffffff?text=Thailand" alt="Thailand">
+                        <div class="card-price">$1,499</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Thailand</h3>
+                        <p class="text-gray-600">Explore the vibrant culture, stunning beaches, and delicious street food of Thailand. A paradise for every traveler.</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 2: Australia -->
+                <div class="card">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Australia" alt="Australia">
+                        <div class="card-price">$2,199</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Australia</h3>
+                        <p class="text-gray-600">From the vast outback to the Great Barrier Reef, discover the unique wildlife and breathtaking landscapes of Down Under.</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 3: Indonesia -->
+                <div class="card">
+                     <div class="relative">
+                        <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Indonesia" alt="Indonesia">
+                        <div class="card-price">$1,299</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Indonesia</h3>
+                        <p class="text-gray-600">Home to idyllic Bali, ancient temples, and volcanic mountains. A diverse archipelago with endless adventures.</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 4: France -->
+                <div class="card">
+                     <div class="relative">
+                        <img src="https://placehold.co/600x400/9b59b6/ffffff?text=France" alt="France">
+                        <div class="card-price">$1,899</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">France</h3>
+                        <p class="text-gray-600">Experience the romance of Paris, the vineyards of Bordeaux, and the stunning art and cuisine of a timeless country.</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 5: Iceland -->
+                <div class="card">
+                     <div class="relative">
+                        <img src="https://placehold.co/600x400/1abc9c/ffffff?text=Iceland" alt="Iceland">
+                        <div class="card-price">$2,499</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Iceland</h3>
+                        <p class="text-gray-600">Witness the Northern Lights, glaciers, and geothermal spas in the land of fire and ice. A truly magical destination.</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 6: Brazil -->
+                <div class="card">
+                     <div class="relative">
+                        <img src="https://placehold.co/600x400/f1c40f/ffffff?text=Brazil" alt="Brazil">
+                        <div class="card-price">$1,799</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Brazil</h3>
+                        <p class="text-gray-600">From the Amazon rainforest to the vibrant Carnival in Rio, Brazil offers an unforgettable and lively experience.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Offer Section -->
+    <section class="offer-section text-white py-20">
+        <div class="container mx-auto text-center px-6">
+             <h2 class="text-4xl md:text-5xl font-bold mb-4">Exclusive Travel Deals</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-gray-200 text-lg">
+                Sign up for our newsletter and get access to secret deals and a <span class="font-bold underline">20% DISCOUNT</span> on your first trip!
+            </p>
+            <a href="register.html" class="bg-white text-teal-700 font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-200 transition-all">
+                Sign Up Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About Column -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Travelbuddy</h3>
+                    <p class="text-gray-400">Your friendly guide to the world. We help you create unforgettable memories, one trip at a time.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="destinations.html" class="footer-link">Destinations</a></li>
+                        <li class="mb-2"><a href="about.html" class="footer-link">About Us</a></li>
+                        <li class="mb-2"><a href="register.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contact Us</h3>
+                     <p class="footer-link mb-2"><i class="fas fa-map-marker-alt mr-2"></i>123 Adventure Ave, Explore City</p>
+                     <p class="footer-link mb-2"><i class="fas fa-phone mr-2"></i>+1 (555) 987-6543</p>
+                     <p class="footer-link"><i class="fas fa-envelope mr-2"></i>hello@travelbuddy.com</p>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 Travelbuddy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

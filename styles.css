@@ -1,0 +1,50 @@
+/* Custom styles for the Travelbuddy theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1600x900/0d9488/e9ecef?text=Adventure+Awaits');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.nav-link {
+    @apply text-gray-700 hover:text-teal-600 transition-colors duration-300 font-medium;
+}
+
+.nav-link-mobile {
+     @apply block py-2 px-4 text-sm text-gray-700 hover:bg-teal-50;
+}
+
+.card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 border border-gray-200;
+}
+.card:hover {
+    @apply -translate-y-2 transform shadow-xl;
+}
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-price {
+    @apply bg-teal-600 text-white text-sm font-bold py-1 px-3 rounded-full absolute top-4 right-4;
+}
+
+.offer-section {
+     background: linear-gradient(rgba(13, 148, 136, 0.8), rgba(13, 148, 136, 0.8)), url('https://placehold.co/1600x800/333333/FFFFFF?text=Special+Offer');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+footer {
+    background-color: #1f2937;
+}
+.footer-link {
+    @apply text-gray-400 hover:text-white transition-colors duration-200;
+}
